@@ -29,7 +29,10 @@ try:
         
         # Set the font used by matplotlib
         mpl.rc('font',**{'family':'serif', 'serif':['Times'], 'size':10,})
-        mpl.rc('text', usetex=True)
+        
+	# TeX appears not to be a common installation these days, so I have
+	# disabled it to maximize compatibility.
+	# mpl.rc('text', usetex=True)
         
         # Import Tkinter (TODO - module is renamed in Python3)
         import Tkinter as tk
